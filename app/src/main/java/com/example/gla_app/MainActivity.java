@@ -32,8 +32,29 @@ public class MainActivity extends AppCompatActivity {
         q2.setMarks(5);
         q2.setCorrect(2);
 
+        Question q3 = new Question();
+        q3.setQue("Which of following is not a programming language?");
+        q3.setOptions(new String[]{"Python","Ruby", "HTML", "PHP"});
+        q3.setMarks(5);
+        q3.setCorrect(3);
+
+        Question q4 = new Question();
+        q4.setQue("AI Stands for?");
+        q4.setOptions(new String[]{"Auto Input","Auto Intelligence", "Artificial Input", "Artificial Intelligence"});
+        q4.setMarks(5);
+        q4.setCorrect(4);
+
+        Question q5 = new Question();
+        q5.setQue("Which language other than java is used for android developement?");
+        q5.setOptions(new String[]{"Kotlin","Perl", "Ruby", ".Net"});
+        q5.setMarks(5);
+        q5.setCorrect(1);
+
         questions.add(q1);
         questions.add(q2);
+        questions.add(q3);
+        questions.add(q4);
+        questions.add(q5);
 
         sp=getSharedPreferences("com.example.gla_app", MODE_PRIVATE);
         SharedPreferences.Editor edt=sp.edit();
