@@ -15,10 +15,11 @@
             android:id="@+id/textView0"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="72dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
             android:textAlignment="textStart"
-            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +40,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
 
         </LinearLayout>
         <LinearLayout
@@ -57,7 +60,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -75,7 +80,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -93,7 +100,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
         </LinearLayout>
         <Button
             android:id="@+id/button2"
