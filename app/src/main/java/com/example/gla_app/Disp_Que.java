@@ -24,6 +24,8 @@ public class Disp_Que extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disp_que);
 
+
+
         Intent intent=getIntent();
         questions=(ArrayList<Question>) intent.getSerializableExtra("list");
         int id[]={R.id.radioButton1, R.id.radioButton2, R.id.radioButton3, R.id.radioButton4,};
@@ -49,7 +51,6 @@ public class Disp_Que extends AppCompatActivity{
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 questions.get(counter).setSelected(rg.getCheckedRadioButtonId());
                 if(counter<questions.size()-1) {
                     counter++;
