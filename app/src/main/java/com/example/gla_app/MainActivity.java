@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
         questions=new ArrayList<>();
         Question q1 = new Question();
-        q1.setQue("UI Means:");
+        q1.setQue("UI Means?");
         q1.setOptions(new String[]{"User Interface","User Interaction", "Useful Interaction", "User Identification"});
         q1.setMarks(5);
         q1.setCorrect(1);
 
         Question q2 = new Question();
-        q2.setQue("Business Logic Is Stored in which file:");
+        q2.setQue("Business Logic Is Stored in which file?");
         q2.setOptions(new String[]{".xml file",".java file", ".html file", "None of these"});
         q2.setMarks(5);
         q2.setCorrect(2);
