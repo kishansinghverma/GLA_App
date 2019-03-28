@@ -7,12 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class Disp_Que extends AppCompatActivity{
 
-    TextView tv[]= new TextView[4];
+    RadioButton rb[]= new RadioButton[4];
     Button next;
     TextView qv;
     ArrayList<Question> questions;
@@ -24,10 +25,10 @@ public class Disp_Que extends AppCompatActivity{
 
         Intent it=getIntent();
         questions=(ArrayList<Question>) it.getSerializableExtra("list");
-        int id[]={R.id.textView1, R.id.textView2, R.id.textView3, R.id.textView4,};
+        int id[]={R.id.radioButton1, R.id.radioButton2, R.id.radioButton3, R.id.radioButton4,};
 
-        for(int i=0; i<tv.length; i++)
-            tv[i]=findViewById(id[i]);
+        for(int i=0; i<rb.length; i++)
+            rb[i]=findViewById(id[i]);
 
         next=findViewById(R.id.button2);
         qv=findViewById(R.id.textView0);
@@ -36,17 +37,24 @@ public class Disp_Que extends AppCompatActivity{
 
         qv.setText("Q"+String.valueOf(counter+1)+": "+questions.get(counter).getQue());
 
-        for(int i=0; i<tv.length; i++)
-            tv[i].setText(questions.get(counter).getOptions()[i]);
+        for(int i=0; i<rb.length; i++)
+            rb[i].setText(questions.get(counter).getOptions()[i]);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
-                counter++;
-                qv.setText("Q"+String.valueOf(counter+1)+": "+questions.get(counter).getQue());
-                for(int i=0; i<tv.length; i++)
-                    tv[i].setText(questions.get(counter).getOptions()[i]);
+
+                if(counter<questions.size()-1) {
+                    counter++;
+                    qv.setText("Q" + String.valueOf(counter + 1) + ": " + questions.get(counter).getQue());
+                    for (int i = 0; i < rb.length; i++)
+                        rb[i].setText(questions.get(counter).getOptions()[i]);
+
+                    if(counter==questions.size()-1)
+                        next.setText("Submit");
+                }
+                else
+                    startActivity(new Intent(Disp_Que.this, Result.class));
             }
         });
 
