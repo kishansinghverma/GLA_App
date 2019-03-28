@@ -18,7 +18,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="20dp"
             android:textAlignment="textStart"
             android:textColor="@android:color/black"
             android:textSize="28sp"
@@ -35,6 +35,8 @@
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="25dp"
                 android:textColor="@android:color/background_dark"
                 android:textSize="20sp"/>
 
@@ -42,12 +44,16 @@
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="5dp"
                 android:textColor="@android:color/background_dark"
                 android:textSize="20sp"/>
 
             <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="match_parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="5dp"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/background_dark"
                 android:textSize="20sp"/>
@@ -56,18 +62,11 @@
             <RadioButton
                 android:id="@+id/radioButton4"
                 android:layout_width="match_parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="5dp"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/background_dark"
                 android:textSize="20sp"/>
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView"
-                android:textColor="@android:color/background_dark"
-                android:textSize="20sp" />
 
         </RadioGroup>
 
