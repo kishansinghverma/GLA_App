@@ -6,10 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //if (((EditText)findViewById(R.id.editText)).getText().toString().equals(s_user) && ((EditText)findViewById(R.id.editText2)).getText().toString().equals(s_pass))
                 //{
-                    Intent it=new Intent(MainActivity.this, que1.class);
+                    Intent it=new Intent(MainActivity.this, Disp_Que.class);
 
                     it.putExtra("list", questions);
 
